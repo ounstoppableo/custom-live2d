@@ -30,7 +30,7 @@ class Model {
         if (this.useCDN) {
             if (!this.modelList) await this.loadModelList();
             const target = randomSelection(this.modelList.models[modelId]);
-            loadlive2d("live2d", `${this.cdnPath}model/${target}/index.json`);
+            loadlive2d("live2d", `https://cdn.jsdelivr.net/gh/imuncle/live2d@vlatest/model/HyperdimensionNeptunia/noir_classic/index.json`);
         } else {
             loadlive2d("live2d", `${this.apiPath}get/?id=${modelId}-${modelTexturesId}`);
             console.log(`Live2D 模型 ${modelId}-${modelTexturesId} 加载完成`);
