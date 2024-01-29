@@ -42,8 +42,8 @@ class Model {
             modelTexturesId = localStorage.getItem("modelTexturesId");
         if (this.useCDN) {
             if (!this.modelList) await this.loadModelList();
-            const target = randomSelection(this.modelList.models[modelId]);
-            loadlive2d("live2d", `${this.cdnPath}model/${target}/index.json`);
+            const target = randomSelection(['https://cdn.jsdelivr.net/gh/imuncle/live2d@vlatest/model/HyperdimensionNeptunia/noir/index.json','https://cdn.jsdelivr.net/gh/imuncle/live2d@vlatest/model/HyperdimensionNeptunia/noir_santa/index.json','https://cdn.jsdelivr.net/gh/imuncle/live2d@vlatest/model/HyperdimensionNeptunia/noir_santa/index.json','https://cdn.jsdelivr.net/gh/imuncle/live2d@vlatest/model/HyperdimensionNeptunia/noireswim/index.json']);
+            loadlive2d("live2d", target);
             showMessage("我的新衣服好看嘛？", 4000, 10);
         } else {
             // 可选 "rand"(随机), "switch"(顺序)
