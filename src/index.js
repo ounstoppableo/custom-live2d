@@ -161,7 +161,7 @@ function initWidget(config, apiPath) {
             localStorage.removeItem("waifu-display");
             document.getElementById("waifu").style.display = "";
             setTimeout(() => {
-                document.getElementById("waifu").style.bottom = 0;
+                document.getElementById("waifu").style.bottom = -45+'px';
             }, 0);
         }
     });

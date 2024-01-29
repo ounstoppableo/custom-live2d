@@ -1,5 +1,5 @@
 // live2d_path 参数建议使用绝对路径
-const live2d_path = "https://cdn.jsdelivr.net/gh/ounstoppableo/custom-live2d@v3.1.1/";
+const live2d_path = "https://cdn.jsdelivr.net/gh/ounstoppableo/custom-live2d@v4.1.1/";
 //const live2d_path = "/live2d-widget/";
 
 // 封装异步加载资源的方法
