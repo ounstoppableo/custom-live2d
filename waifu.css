@@ -44,7 +44,7 @@
 	box-shadow: 0 3px 15px 2px rgba(191, 158, 118, .2);
 	font-size: 14px;
 	line-height: 24px;
-	margin: -30px 20px;
+	margin: 65px 20px;
 	min-height: 70px;
 	opacity: 0;
 	overflow: hidden;
@@ -79,7 +79,7 @@
 	opacity: 0;
 	position: absolute;
 	right: -10px;
-	top: 70px;
+	top: 150px;
 	transition: opacity 1s;
 }
 
