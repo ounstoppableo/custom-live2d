@@ -19,8 +19,11 @@ class Model {
     }
 
     async loadModelList() {
-        const response = await fetch(`${this.cdnPath}model_list.json`);
-        this.modelList = await response.json();
+       await Promise.all([fetch('https://cdn.jsdelivr.net/gh/imuncle/live2d@vlatest/model/HyperdimensionNeptunia/noireswim/index.json'),
+        fetch('https://cdn.jsdelivr.net/gh/imuncle/live2d@vlatest/model/HyperdimensionNeptunia/noir/index.json'),
+        fetch('https://cdn.jsdelivr.net/gh/imuncle/live2d@vlatest/model/HyperdimensionNeptunia/noir_santa/index.json'),
+        fetch('https://cdn.jsdelivr.net/gh/imuncle/live2d@vlatest/model/HyperdimensionNeptunia/noir_santa/index.json')
+        ])
     }
 
     async loadModel(modelId, modelTexturesId, message) {
