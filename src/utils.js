@@ -4,8 +4,6 @@ function randomSelection(str, obj) {
         while (obj[len] === str) {
             len = Math.floor(Math.random() * obj.length)
         }
-        console.log(obj)
-        console.log(len)
         return obj[len]
     } else {
         return obj

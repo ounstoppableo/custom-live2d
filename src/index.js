@@ -88,7 +88,9 @@ function loadWidget(config) {
                 if (lastHoverElement === selector) return;
                 lastHoverElement = selector;
                 text = randomSelection('',text);
+                console.log(text)
                 text = text.replace("{text}", event.target.innerText);
+                console.log(text)
                 showMessage(text, 4000, 8);
                 return;
             }
