@@ -8,7 +8,7 @@ function showMessage(text, timeout, priority) {
         clearTimeout(messageTimer);
         messageTimer = null;
     }
-    text = randomSelection(text);
+    text = randomSelection('',text);
     sessionStorage.setItem("waifu-text", priority);
     const tips = document.getElementById("waifu-tips");
     tips.innerHTML = text;
